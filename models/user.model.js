@@ -23,7 +23,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        trim: false,
+        trim: true,
         minlength: 12
     },
 
@@ -33,6 +33,11 @@ const userSchema = new Schema({
         unique: true,
         trim: true,
         minlength: 8
+    },
+
+    IsAdmin: {
+        type: Boolean,
+        default: false
     }
 }, {
     timestamps: true,
