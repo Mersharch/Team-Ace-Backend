@@ -15,7 +15,7 @@ const productSchema = new Schema({
         unique: true,
     },
 
-    brand: {
+    parentID: {
         type: String,
         required: true,
     },
@@ -37,7 +37,7 @@ const productSchema = new Schema({
         default: 0,
     },
 
-    category: {
+    categoryID: {
         type: String,
         required: true,
     },
